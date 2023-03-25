@@ -39,9 +39,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Car
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-    
-QCOM_SOONG_NAMESPACE := \
-    $(LOCAL_PATH)/qcom-caf
 
 # Permissions
 PRODUCT_COPY_FILES += \
