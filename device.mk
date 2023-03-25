@@ -103,18 +103,7 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.msm8953:32
 
 
-# Audio features
-PRODUCT_PACKAGES += \
-    libhfp:32 \
-    libsndmonitor:32 \
-    libspkrprot:32
 
-# Audio configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/qcom-caf/audio/configs/msm8953/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
-    $(LOCAL_PATH)/qcom-caf/audio/configs/msm8953/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
-    $(LOCAL_PATH)/qcom-caf/audio/configs/msm8953/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
-    $(LOCAL_PATH)/qcom-caf/audio/configs/msm8953/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
 # Audio XML configuration files
 PRODUCT_COPY_FILES += \
@@ -177,7 +166,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
-    libgralloc.system.qti \
     libqdMetaData.system \
     libtinyxml \
     libvulkan \
@@ -203,10 +191,6 @@ PRODUCT_PACKAGES += \
     fakelogprint \
     libshims_gxfpd
 
-# FM
-PRODUCT_PACKAGES += \
-    RevampedFMRadio \
-    libqcomfmjni:64
 
 # Fwk-detect
 PRODUCT_PACKAGES += \
